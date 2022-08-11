@@ -32,6 +32,6 @@
     },
 
   },
-  "include": ["src", "**/*.ts", "**/*.tsx"],
+  "include": ["**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }
