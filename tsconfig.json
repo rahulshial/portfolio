@@ -1,10 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
+    "lib": ["dom","dom.iterable","esnext"
     ],
     "allowJs": true,
     "skipLibCheck": true,
@@ -18,20 +15,13 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx",
+    "jsx": "preserve",
+    "incremental": true,
     "baseUrl": "./src",
     "paths": {
-      "@components/*": ["./components/*"],
-      "@views/*": ["./views/*"],
-      "@pages/*": ["./pages/*"],
-      "@assets/*": ["./assets/*"],
-      "@config/*": ["./config/*"],
-      "@utils/*": ["./utils/*"],
-      "@hooks/*": ["./hooks/*"],
-      "@type/*": ["./type/*"],
+      "@components/*": ["./components/*"]
     },
-
   },
-  "include": ["**/*.ts", "**/*.tsx"],
+  "include": ["src/*", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }
